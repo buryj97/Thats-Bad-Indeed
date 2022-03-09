@@ -1,0 +1,102 @@
+/* RANKING PAGE INVISIBLE */
+
+
+#ranking{
+  visibility: hidden;
+}
+
+#rankinglead{
+  visibility: hidden;
+}
+#generator{
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+body{
+  display: grid;
+    font-family: 'Noto Sans';
+}
+
+.nav-bar {
+  display: grid;
+  float: top;
+}
+
+.nav-item {
+  display: flex;
+  justify-items: end;
+  float: right;
+  padding-top: 45px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+#logo {
+  font-family: 'Nunito', sans-serif;
+  color: #2164F2;
+  word-spacing: -.1em;
+  float: left;
+  display: flex;
+  vertical-align: top;
+  font-size: 35px;
+  padding-left: 20px;
+}
+
+.search-bar {
+  display: grid;
+  justify-items: center;
+}
+
+
+#search-label {
+  font-size: 18px;
+  width: 80%;
+  padding: 10px 60px 12px 5px;
+}
+
+#myInput {
+  background-image: url(https://img.pngio.com/simple-grey-search-icon-transparent-png-stickpng-search-icon-png-2064_2011.png); /* Add a search icon to input */
+  background-repeat: no-repeat; 
+  background-size: 20px;
+  background-position: 10px center;
+  width: 80%; 
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #949494; 
+  border-radius: 10px;
+}
+
+.search-results {
+  display: grid;
+  justify-items: center;
+  padding-bottom: 20px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+}
+
+#myUL li a {
+  border-bottom: 1px solid #ddd; 
+  padding: 12px; 
+  text-decoration: none; 
+  font-size: 16px; 
+  color: black; 
+  display: block; 
+
+}
+
+#myUL li a:hover:not(.header) {
+  text-decoration: underline;
+}
+
+#spacer {
+  background-color: transparent;
+}
