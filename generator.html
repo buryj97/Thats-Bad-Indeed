@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,34 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:regular,bold,italic">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
 </head>
 
 <body>
     <div class="nav-bar">
         <nav>
-            <a href="index.html"> <h1 id="logo">That's Bad Indeed</h1> </a>
-          <a id="ranking" class="nav-item" target="_blank" href="ranking.html" >Ranking</a>
-          <a class="nav-item" href="generator.html">Random Job</a>
-          </nav>
-      </div>
+            <a href="index.html">
+                <h1 id="logo">That's Bad Indeed</h1>
+            </a>
+            <a id="ranking" class="nav-item" target="_blank" href="ranking.html">Ranking</a>
+            <a class="nav-item" id="random" href="generator.html">Random Job</a>
+        </nav>
+    </div>
     <div id="generator">
         <h1>Think your job sucks?</h1>
-     <div id="jobDisplay">
-         <p>Click to randomly generate worse jobs</p>
-     </div>
-     <br>
-     <button onclick="newJob()">See worse jobs</button>
+        <p id="jobDisplay">Click to randomly generate worse jobs</p>
+        <br>
+        <button id="btnGenerate">See worse jobs</button>
     </div>
- 
-  <div>
-      <h5 id="rankinglead">Wondering how we chose these jobs? Check out our <a target="_blank" href="ranking.html">detailed ranking!</a></h5>
-  </div>
 
-  <script src="js/scripts.js"></script>
+    <div>
+        <h5 id="rankinglead">Wondering how we chose these jobs? Check out our <a target="_blank"
+                href="ranking.html">detailed ranking!</a></h5>
+    </div>
 
+    <script src="js/generator.js"></script>
+    <script src="/js/search.js"></script>
 </body>
+
 </html>

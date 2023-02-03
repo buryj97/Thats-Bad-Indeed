@@ -1,67 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bad Indeed</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:regular,bold,italic">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bad Indeed</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:regular,bold,italic">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
 </head>
 
-<div class="nav-bar">
-  <nav>
-    <a href="index.html"> <h1 id="logo">That's Bad Indeed</h1> </a>
-    <a id="ranking" class="nav-item" target="_blank" href="ranking.html" >Ranking</a>
-    <a class="nav-item" href="generator.html">Random Job</a>
-    </nav>
-</div>
-<span id="spacer"> </span>
 <body>
-   <div class="search-bar">
-       <label id="search-label" for="myInput"><strong>Does your job suck?</strong></label>
-    <input type="text" id="myInput" onkeyup="search()" placeholder="Find your job">
-    
-    <!--<h6>Don't see your job? If you think it should make the list, <a id="contact-form" href="#">let us know!</a></h6> -->
-  </div>
-  
-    
+  <header>
+    <div class="nav-bar">
+      <nav>
+        <a href="index.html">
+          <h1 id="logo">That's Bad Indeed</h1>
+        </a>
+        <a id="ranking" class="nav-item" target="_blank" href="ranking.html">Ranking</a>
+        <a class="nav-item" id="random" href="generator.html">Random Job</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <span id="spacer"> </span>
+    <div class="search-bar">
+      <label id="search-label" for="myInput"><strong>Does your job suck?</strong></label>
+      <input type="text" id="myInput" placeholder="Find your job">
+    </div>
     <div class="search-results">
-    <ul id="myUL">
-      <li><a class="box" target="_blank" href="">Amazon Delivery Driver </a></li>
-      <li><a target="_blank" href="">Bellhop</a></li>
-      <li><a target="_blank" href="">Bank Social Media Manager</a></li>
-      <li><a target="_blank" href="">Cleaner</a></li>
-      <li><a target="_blank" href="">Crime Scene Cleanup</a></li>
-      <li><a target="_blank" href="">Chick-fil-A Employee</a></li>
-      <li><a target="_blank" href="">Corporate Lawyer</a></li>
-      <li><a target="_blank" href="">Fisherman</a></li>
-      <li><a target="_blank" href="">Garbage Collector</a></li>
-      <li><a target="_blank" href="">Landlord</a></li>
-      <li><a target="_blank" href="">Miner</a></li>
-      <li><a target="_blank" href="">Monsanto (any job)</a></li>
-      <li><a target="_blank" href="">Papparazo</a></li>
-      <li><a target="_blank" href="">Podiatrist</a></li>
-      <li><a target="_blank" href="">Promotional Mascot</a></li>
-      <li><a target="_blank" href="">Roadkill Collector</a></li>
-      <li><a target="_blank" href="">Roofer</a></li>
-      <li><a target="_blank" href="">Solider</a></li>
-      <li><a target="_blank" href="">Subtitle Translator</a></li>
-      <li><a target="_blank" href="">Telemarketer</a></li>
-      <li><a target="_blank" href="">Ticket Inspector</a></li>
-      <li><a target="_blank" href="">Traffic Director</a></li>
-      <li><a target="_blank" href="">Uber Driver</a></li>
-      <li><a target="_blank" href="">Yard Guy</a></li>
-      
-      
-    </ul>
-    
-
-   </div>
-
-
-   <script src="js/scripts.js"></script>
+      <ul id="myUL">
+      </ul>
+    </div>
+  </main>
+  <script src="js/generator.js"></script>
+  <script src="/js/search.js"></script>
 </body>
 
 </html>

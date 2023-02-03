@@ -1,24 +1,26 @@
 /* RANKING PAGE INVISIBLE */
 
-
-#ranking{
+#ranking {
   visibility: hidden;
 }
 
-#rankinglead{
+#rankinglead {
   visibility: hidden;
 }
-#generator{
-    text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -100px;
-    margin-left: -200px;
+#generator {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
 }
-body{
+
+/* NAV */
+
+body {
   display: grid;
-    font-family: 'Noto Sans';
+  font-family: "Noto Sans";
 }
 
 .nav-bar {
@@ -35,10 +37,12 @@ body{
   padding-right: 5px;
 }
 
+/* SEARCH */
+
 #logo {
-  font-family: 'Nunito', sans-serif;
-  color: #2164F2;
-  word-spacing: -.1em;
+  font-family: "Nunito", sans-serif;
+  color: #2164f2;
+  word-spacing: -0.1em;
   float: left;
   display: flex;
   vertical-align: top;
@@ -51,7 +55,6 @@ body{
   justify-items: center;
 }
 
-
 #search-label {
   font-size: 18px;
   width: 80%;
@@ -59,14 +62,14 @@ body{
 }
 
 #myInput {
-  background-image: url(https://img.pngio.com/simple-grey-search-icon-transparent-png-stickpng-search-icon-png-2064_2011.png); /* Add a search icon to input */
-  background-repeat: no-repeat; 
+  background-image: url(/img/search.png);
+  background-repeat: no-repeat;
   background-size: 20px;
   background-position: 10px center;
-  width: 80%; 
-  font-size: 16px; 
-  padding: 12px 20px 12px 40px; 
-  border: 1px solid #949494; 
+  width: 80%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #949494;
   border-radius: 10px;
 }
 
@@ -83,20 +86,49 @@ body{
   width: 80%;
 }
 
-#myUL li a {
-  border-bottom: 1px solid #ddd; 
-  padding: 12px; 
-  text-decoration: none; 
-  font-size: 16px; 
-  color: black; 
-  display: block; 
-
-}
-
-#myUL li a:hover:not(.header) {
-  text-decoration: underline;
+#myUL li {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
 }
 
 #spacer {
   background-color: transparent;
+}
+
+#random {
+  text-decoration: none;
+  color: #2164f2;
+}
+
+/* Button */
+#btnGenerate {
+  background-color: #2164f2;
+  border-radius: 8px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#btnGenerate:hover {
+  background-color: #3f79f7;
 }
